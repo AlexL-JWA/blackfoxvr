@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test Pug Page</title>
+    <link href="css/main.css" rel="stylesheet">
+    <style>.preloader{position:fixed;top:0;left:0;right:0;bottom:0;background-image:url(../img/bg.jpg);z-index:10}.preloader img{width:120px;display:table;margin:0 auto 50px}.preloader .preloader-num{display:none}.preloader .line{background:#555;display:table;width:220px;height:5px}.preloader .line .preloader-line{background:#ff5b0a;height:5px;width:0}.preloader .preloader-content{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)} </style>
+    <!--(if lt IE 9)
+    script(src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js")
+    script(src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js")
+    -->
+    <!--(endif)-->
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="preloader-content"><img src="img/preloader.svg" alt="Preloader image">
+        <div class="preloader-num">0%</div>
+        <div class="line">
+          <div class="preloader-line"></div>
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><a class="logo" href="#"><img src="img/logo.png" alt="Logo"></a>
+            <div class="burger-menu"><span></span><span></span><span></span></div>
+            <div class="menu-block">
+              <ul class="contact">
+                <li class="icon-marker"><a href="#">г. Харьков<br>ул. Любая 8</a></li>
+                <li class="icon-mobile"><a href="tel:0960277701">+38 (096) 027 77 01</a><a href="tel:0960277701">+38 (096) 027 77 01</a></li>
+              </ul><a class="button" href="#" data-toggle="modal" data-target=".registration">Заказать звонок</a>
+              <ul class="menu">
+                <li><a href="#scroll-about-us">О НАС</a></li>
+                <li><a href="#scroll-our-games">ИГРЫ</a></li>
+                <li><a href="#scroll-calendar">КАЛЕНДАРЬ</a></li>
+                <li><a href="#scroll-gallery">ГАЛЕРЕЯ</a></li>
+                <li><a href="#scroll-footer">КОНТАКТЫ</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="banner" id="scroll-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div class="banner-content">
+                <h1>Возможность ближе прикоснуться к виртуальной реальности</h1>
+                <p>в полностью оборудованном пространстве на территории Black Fox</p><a class="button" href="#scroll-calendar">Записаться на игру</a>
+              </div>
+            </div>
+          </div>
+        </div><a class="icon-mouse" href="#about-us"></a>
+      </div>
+      <div class="about-us" id="scroll-about-us">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <h2>Кто же мы такие?</h2>
+              <h5>300 м². 4 зала. Большие возможности для полного погружения в игру</h5>
+              <div class="about-content">
+                <div class="img"><img src="img_clients/photo.jpg" alt="photo"></div>
+                <div class="description">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="our-games" id="scroll-our-games">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <h2>Наши игры</h2>
+              <h5>В нашем зале предоставлено большое количество игр на ваш вкус</h5>
+              <ul class="buttons">
+                <li class="active"><a class="button vr" href="#vr" data-toggle="tab">VR</a></li>
+                <li><a class="button ps" href="#ps" data-toggle="tab">PS 4</a></li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane active" id="vr">
+                  <div class="slider-games vr">
+                    <div class="item">
+                      <div class="img"><img src="img_clients/game-2.jpg" alt="#">
+                        <div class="desc"><i class="icon-close"></i>
+                          <h3>Lorem ipsum dolor</h3>
+                          <ul>
+                            <li class="demo">DEMO</li>
+                            <li class="new">NEW</li>
+                          </ul><i class="icon-users">1-2 человека</i>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt lit anim id est laborum. Sed</p><a class="button"> Записаться на игру</a>
+                        </div><a class="more"><span>Подробнее</span></a>
+                      </div>
+                      <h3>Lorem ipsum dolor</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+                    </div>
+                    <div class="item">
+                      <div class="img"><img src="img_clients/game-3.jpg" alt="#">
+                        <div class="desc"><i class="icon-close"></i>
+                          <h3>Lorem ipsum dolor</h3>
+                          <ul>
+                            <li class="new">NEW</li>
+                          </ul><i class="icon-users">1-2 человека</i>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt lit anim id est laborum. Sed</p><a class="button"> Записаться на игру</a>
+                        </div><a class="more"><span>Подробнее</span></a>
+                      </div>
+                      <h3>Lorem ipsum dolor</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+                    </div>
+                    <div class="item">
+                      <div class="img"><img src="img_clients/game-4.jpg" alt="#">
+                        <div class="desc"><i class="icon-close"></i>
+                          <h3>Fallout 4 VR</h3>
+                          <ul>
+                            <li class="demo">DEMO</li>
+                            <li class="new">NEW</li>
+                          </ul><i class="icon-users">1-2 человека</i>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt lit anim id est laborum. Sed</p><a class="button"> Записаться на игру</a>
+                        </div><a class="more"><span>Подробнее</span></a>
+                      </div>
+                      <h3>Fallout 4 VR</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+                    </div>
+                    <div class="item">
+                      <div class="img"><img src="img_clients/game-5.jpg" alt="#">
+                        <div class="desc"><i class="icon-close"></i>
+                          <h3>Lorem ipsum dolor</h3>
+                          <ul>
+                            <li class="demo">DEMO</li>
+                            <li class="new">NEW</li>
+                          </ul><i class="icon-multiple-users">1-4 человека</i>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed</p><a class="button"> Записаться на игру</a>
+                        </div><a class="more"><span>Подробнее</span></a>
+                      </div>
+                      <h3>Lorem ipsum dolor</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+                    </div>
+                    <div class="item">
+                      <div class="img"><img src="img_clients/game-6.jpg" alt="#">
+                        <div class="desc"><i class="icon-close"></i>
+                          <h3>Lorem ipsum dolor</h3>
+                          <ul>
+                            <li class="new">NEW</li>
+                          </ul><i class="icon-users">1-2 человека</i>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt lit anim id est laborum. Sed</p><a class="button"> Записаться на игру</a>
+                        </div><a class="more"><span>Подробнее</span></a>
+                      </div>
+                      <h3>Lorem ipsum dolor</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+                    </div>
+                    <div class="item">
+                      <div class="img"><img src="img_clients/game-2.jpg" alt="#">
+                        <div class="desc"><i class="icon-close"></i>
+                          <h3>Lorem ipsum dolor</h3>
+                          <ul>
+                            <li class="demo">DEMO</li>
+                          </ul><i class="icon-user">1 человек</i>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt lit anim id est laborum. Sed</p><a class="button"> Записаться на игру</a>
+                        </div><a class="more"><span>Подробнее</span></a>
+                      </div>
+                      <h3>Lorem ipsum dolor</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+                    </div>
+                    <div class="item">
+                      <div class="img"><img src="img_clients/game-3.jpg" alt="#">
+                        <div class="desc"><i class="icon-close"></i>
+                          <h3>Lorem ipsum dolor</h3>
+                          <ul>
+                            <li class="new">NEW</li>
+                          </ul><i class="icon-user">1 человек</i>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt lit anim id est laborum. Sed</p><a class="button"> Записаться на игру</a>
+                        </div><a class="more"><span>Подробнее</span></a>
+                      </div>
+                      <h3>Lorem ipsum dolor</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="ps">
+                  <div class="slider-games ps">
+                    <div class="item">
+                      <div class="img"><img src="img_clients/game-2.jpg" alt="#">
+                        <div class="desc"><i class="icon-close"></i>
+                          <h3>Lorem ipsum dolor</h3>
+                          <ul>
+                            <li class="demo">DEMO</li>
+                            <li class="new">NEW</li>
+                          </ul><i class="icon-users">1-2 человека</i>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt lit anim id est laborum. Sed</p><a class="button"> Записаться на игру</a>
+                        </div><a class="more"><span>Подробнее</span></a>
+                      </div>
+                      <h3>Lorem ipsum dolor</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+                    </div>
+                    <div class="item">
+                      <div class="img"><img src="img_clients/game-3.jpg" alt="#">
+                        <div class="desc"><i class="icon-close"></i>
+                          <h3>Lorem ipsum dolor</h3>
+                          <ul>
+                            <li class="new">NEW</li>
+                          </ul><i class="icon-users">1-2 человека</i>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt lit anim id est laborum. Sed</p><a class="button"> Записаться на игру</a>
+                        </div><a class="more"><span>Подробнее</span></a>
+                      </div>
+                      <h3>Lorem ipsum dolor</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+                    </div>
+                    <div class="item">
+                      <div class="img"><img src="img_clients/game-4.jpg" alt="#">
+                        <div class="desc"><i class="icon-close"></i>
+                          <h3>Fallout 4 VR</h3>
+                          <ul>
+                            <li class="demo">DEMO</li>
+                            <li class="new">NEW</li>
+                          </ul><i class="icon-users">1-2 человека</i>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt lit anim id est laborum. Sed</p><a class="button"> Записаться на игру</a>
+                        </div><a class="more"><span>Подробнее</span></a>
+                      </div>
+                      <h3>Fallout 4 VR</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+                    </div>
+                    <div class="item">
+                      <div class="img"><img src="img_clients/game-5.jpg" alt="#">
+                        <div class="desc"><i class="icon-close"></i>
+                          <h3>Lorem ipsum dolor</h3>
+                          <ul>
+                            <li class="demo">DEMO</li>
+                            <li class="new">NEW</li>
+                          </ul><i class="icon-multiple-users">1-4 человека</i>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed</p><a class="button"> Записаться на игру</a>
+                        </div><a class="more"><span>Подробнее</span></a>
+                      </div>
+                      <h3>Lorem ipsum dolor</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+                    </div>
+                    <div class="item">
+                      <div class="img"><img src="img_clients/game-6.jpg" alt="#">
+                        <div class="desc"><i class="icon-close"></i>
+                          <h3>Lorem ipsum dolor</h3>
+                          <ul>
+                            <li class="new">NEW</li>
+                          </ul><i class="icon-users">1-2 человека</i>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt lit anim id est laborum. Sed</p><a class="button"> Записаться на игру</a>
+                        </div><a class="more"><span>Подробнее</span></a>
+                      </div>
+                      <h3>Lorem ipsum dolor</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+                    </div>
+                    <div class="item">
+                      <div class="img"><img src="img_clients/game-2.jpg" alt="#">
+                        <div class="desc"><i class="icon-close"></i>
+                          <h3>Lorem ipsum dolor</h3>
+                          <ul>
+                            <li class="demo">DEMO</li>
+                          </ul><i class="icon-user">1 человек</i>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt lit anim id est laborum. Sed</p><a class="button"> Записаться на игру</a>
+                        </div><a class="more"><span>Подробнее</span></a>
+                      </div>
+                      <h3>Lorem ipsum dolor</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+                    </div>
+                    <div class="item">
+                      <div class="img"><img src="img_clients/game-3.jpg" alt="#">
+                        <div class="desc"><i class="icon-close"></i>
+                          <h3>Lorem ipsum dolor</h3>
+                          <ul>
+                            <li class="new">NEW</li>
+                          </ul><i class="icon-user">1 человек</i>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt lit anim id est laborum. Sed</p><a class="button"> Записаться на игру</a>
+                        </div><a class="more"><span>Подробнее</span></a>
+                      </div>
+                      <h3>Lorem ipsum dolor</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="the-calendar" id="scroll-calendar">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <h2>Календарь</h2>
+              <h5>Запишитесь на сеанс игры в удобное для Вас время</h5>
+              <div class="calendar-block">
+                <div class="left-block">
+                  <div class="datepicker">
+                    <input class="hide" type="text">
+                    <div class="calendar"></div>
+                  </div>
+                </div>
+                <div class="right-block">
+                  <form id="scroll-form">
+                    <div class="input">
+                      <label>Ваше Имя</label>
+                      <input type="text" placeholder="Введите Ваше имя">
+                    </div>
+                    <div class="input">
+                      <label>Ваш Email<span>(не обязательно)</span></label>
+                      <input type="email" placeholder="Введите Ваше Email">
+                    </div>
+                    <div class="input">
+                      <label>Ваш номер телефона</label>
+                      <input type="tel" placeholder="Введите Ваш номер телефона">
+                    </div>
+                    <div class="select-block">
+                      <label>Кол-во посетителей</label>
+                      <select>
+                        <option value="one">1 чел</option>
+                        <option value="two">2 чел</option>
+                        <option value="three">3 чел</option>
+                        <option value="four">4 чел</option>
+                      </select>
+                    </div>
+                    <div class="input-promo">
+                      <label>Промо код</label>
+                      <input type="text" placeholder="Введите промо код">
+                    </div>
+                    <h3 class="price">Цена<span>350<strong>грн</strong></span></h3>
+                    <div class="button">
+                      <input type="submit" value="Оформить бронь">
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="our-advantages">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <h2>Наши преимущества</h2>
+              <h5>Все эти помещения включают в себя удивительные преимущества.</h5>
+              <div class="items">
+                <div class="item"><i class="icon-projector"></i>
+                  <p>Широкоформатный проектор</p>
+                </div>
+                <div class="item"><i class="icon-screen"></i>
+                  <p>Экран</p>
+                </div>
+                <div class="item"><i class="icon-wifi"></i>
+                  <p>WiFi</p>
+                </div>
+                <div class="item"><i class="icon-Flipchart"></i>
+                  <p>Флипчарт</p>
+                </div>
+                <div class="item"><i class="icon-light"></i>
+                  <p>Хорошее освещение</p>
+                </div>
+                <div class="item"><i class="icon-roller"></i>
+                  <p>Новый ремонт, кондиционеры</p>
+                </div>
+                <div class="item"><i class="icon-coffee"></i>
+                  <p>Кофебрейк</p>
+                </div>
+                <div class="item"><i class="icon-cooker"></i>
+                  <p>Печеньки :)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner-min" style="background-image:url(img_clients/banner-bg-2.jpg)">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <h2>Выберите Black Fox в качестве места проведения незабываемого сегодня!</h2><a class="button" href="#scroll-form">Отправить заявку</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery" id="scroll-gallery">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <h2>Галерея</h2>
+              <h5>В нашем зале предоставлено большое количество игр на ваш вкус</h5>
+              <div class="slider-gallery">
+                <div class="item"><a data-fancybox="gallery" href="img_clients/img-2.jpg"><img src="img_clients/img-2.jpg" alt="#"><span>Подробнее</span></a></div>
+                <div class="item"><a data-fancybox="gallery" href="img_clients/img-3.jpg"><img src="img_clients/img-3.jpg" alt="#"><span>Подробнее</span></a></div>
+                <div class="item"><a data-fancybox="gallery" href="img_clients/img-4.jpg"><img src="img_clients/img-4.jpg" alt="#"><span>Подробнее</span></a></div>
+                <div class="item"><a data-fancybox="gallery" href="img_clients/img-5.jpg"><img src="img_clients/img-5.jpg" alt="#"><span>Подробнее</span></a></div>
+                <div class="item"><a data-fancybox="gallery" href="img_clients/img-6.jpg"><img src="img_clients/img-6.jpg" alt="#"><span>Подробнее</span></a></div>
+                <div class="item"><a data-fancybox="gallery" href="img_clients/img-2.jpg"><img src="img_clients/img-2.jpg" alt="#"><span>Подробнее</span></a></div>
+                <div class="item"><a data-fancybox="gallery" href="img_clients/img-3.jpg"><img src="img_clients/img-3.jpg" alt="#"><span>Подробнее</span></a></div>
+                <div class="item"><a data-fancybox="gallery" href="img_clients/img-4.jpg"><img src="img_clients/img-4.jpg" alt="#"><span>Подробнее</span></a></div>
+                <div class="item"><a data-fancybox="gallery" href="img_clients/img-5.jpg"><img src="img_clients/img-5.jpg" alt="#"><span>Подробнее</span></a></div>
+                <div class="item"><a data-fancybox="gallery" href="img_clients/img-6.jpg"><img src="img_clients/img-6.jpg" alt="#"><span>Подробнее</span></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reviews">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <h2>Отзывы</h2>
+              <h5>В нашем зале предоставлено большое количество игр на ваш вкус</h5>
+              <div class="slider-reviews">
+                <div class="item">
+                  <div class="img icon-no-photo"><img src="img_clients/photo.jpg" alt="#"></div>
+                  <div class="description">
+                    <h3>Маша Машина<span>Должность (по желанию)</span></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="img icon-no-photo"></div>
+                  <div class="description">
+                    <h3>Маша Машина<span>Должность (по желанию)</span></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="img icon-no-photo"><img src="img_clients/photo.jpg" alt="#"></div>
+                  <div class="description">
+                    <h3>Маша Машина<span>Должность (по желанию)</span></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="img icon-no-photo"></div>
+                  <div class="description">
+                    <h3>Маша Машина<span>Должность (по желанию)</span></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                  </div>
+                </div>
+              </div><a class="button" href="#" data-toggle="modal" data-target=".modal-reviews">Оставить отзыв</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="blog">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <h2>Блог</h2>
+              <h5>В нашем зале предоставлено большое количество игр на ваш вкус</h5>
+              <div class="blog-items">
+                <div class="item">
+                  <div class="img"><img src="img_clients/img-2.jpg" alt="#"></div><a class="link" href="#"></a>
+                  <h3>Lorem ipsum dolor.</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus corporis impedit tempore itaque iste, voluptatem ullam dolor</p>
+                </div>
+                <div class="item">
+                  <div class="img"><img src="img_clients/img-3.jpg" alt="#"></div><a class="link" href="#"></a>
+                  <h3>Lorem ipsum dolor.</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus corporis impedit tempore itaque iste, voluptatem ullam dolor</p>
+                </div>
+                <div class="item">
+                  <div class="img"><img src="img_clients/img-4.jpg" alt="#"></div><a class="link" href="#"></a>
+                  <h3>Lorem ipsum dolor.</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus corporis impedit tempore itaque iste, voluptatem ullam dolor</p>
+                </div>
+                <div class="item">
+                  <div class="img"><img src="img_clients/img-5.jpg" alt="#"></div><a class="link" href="#"></a>
+                  <h3>Lorem ipsum dolor.</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus corporis impedit tempore itaque iste, voluptatem ullam dolor</p>
+                </div>
+              </div><a class="button" href="#">Все статьи</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="scroll-footer">
+      <div class="top-block">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <ul class="contacts">
+                <li class="icon-mail"><a href="mailto:black_fox@gmail.com">black_fox@gmail.com</a></li>
+                <li class="icon-mobile"><a href="tel">+3 8(012) 234-32-62</a></li>
+                <li class="icon-marker"><a href="">г. Харьков<br>ул. Любая 8</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="menu-block">
+              <ul class="menu">
+                <li><a href="#scroll-about-us">О НАС</a></li>
+                <li><a href="#scroll-our-games">ИГРЫ</a></li>
+                <li><a href="#scroll-calendar">КАЛЕНДАРЬ</a></li>
+                <li><a href="#scroll-gallery">ГАЛЕРЕЯ</a></li>
+                <li><a href="#scroll-footer">КОНТАКТЫ</a></li>
+              </ul>
+              <ul class="soc">
+                <li><a class="icon-facebook" href="#"></a></li>
+                <li><a class="icon-vk" href="#"></a></li>
+                <li><a class="icon-youtube" href="#"></a></li>
+                <li><a class="icon-telegram" href="#"></a></li>
+                <li><a class="icon-instagram" href="#"></a></li>
+                <li><a class="icon-linkedin" href="#"></a></li>
+              </ul>
+            </div>
+            <div id="map"></div>
+            <div class="copiright">
+              <p>Black Fox &#169; Все права защищены</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal fade registration" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <div class="modal-head">
+            <h3>Оформление заявки</h3>
+          </div>
+          <form>
+            <div class="input">
+              <label>Ваше Имя</label>
+              <input type="text" placeholder="Введите Ваше имя">
+            </div>
+            <div class="input">
+              <label>Ваш номер телефона</label>
+              <input type="tel" placeholder="Введите Ваш номер телефона">
+            </div>
+            <div class="button">
+              <input type="submit" value="Заказать звонок">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade alert" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button><img src="img/logo.png" alt="logo">
+          <h3>Ваша заявка принята!</h3>
+          <p>Наш менеджер свяжется с Вами в близжайшее время</p><a class="button" href="#">Вернуться на главную</a>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade modal-reviews" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <div class="modal-head">
+            <h3>Отзыв</h3>
+          </div>
+          <form>
+            <div class="user-photo">
+              <input id="add-photo" type="file">
+              <label class="icon-no-photo" for="add-photo"></label>
+            </div>
+            <div class="user">
+              <div class="input">
+                <label>Ваше Имя</label>
+                <input type="text" placeholder="Введите Ваше имя">
+              </div>
+              <div class="input">
+                <label>Ваша должность<span>(не обязательно)</span></label>
+                <input type="text" placeholder="Введите Вашу должность">
+              </div>
+            </div>
+            <div class="textarea">
+              <label>Ваш отзыв</label>
+              <textarea placeholder="Напишите Ваш отзыв"></textarea>
+            </div>
+            <div class="button">
+              <input type="submit" value="Оставить отзыв">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="datepicker-time hide" data-hours="day-12">
+      <div class="tr hours">
+        <div class="td hour disabled">09.00 - 10.00</div>
+        <div class="td hour disabled">10.00 - 11.00</div>
+        <div class="td hour">11.00 - 12.00</div>
+        <div class="td hour">12.00 - 13.00</div>
+        <div class="td hour disabled">13.00 - 14.00</div>
+        <div class="td hour disabled">14.00 - 15.00</div>
+        <div class="td hour">15.00 - 16.00</div>
+        <div class="td hour disabled">16.00 - 17.00</div>
+        <div class="td hour disabled">17.00 - 18.00</div>
+        <div class="td hour">18.00 - 19.00</div>
+        <div class="td hour">19.00 - 20.00</div>
+        <div class="td hour">20.00 - 21.00</div>
+        <div class="td hour">21.00 - 22.00</div>
+        <div class="td hour">22.00 - 23.00</div>
+      </div>
+    </div>
+    <div class="datepicker-time hide" data-hours="day-13">
+      <div class="tr hours">
+        <div class="td hour disabled">09.00 - 10.00</div>
+        <div class="td hour disabled">10.00 - 11.00</div>
+        <div class="td hour disabled">11.00 - 12.00</div>
+        <div class="td hour disabled">12.00 - 13.00</div>
+        <div class="td hour disabled">13.00 - 14.00</div>
+        <div class="td hour disabled">14.00 - 15.00</div>
+        <div class="td hour disabled">15.00 - 16.00</div>
+        <div class="td hour">16.00 - 17.00</div>
+        <div class="td hour">17.00 - 18.00</div>
+        <div class="td hour">18.00 - 19.00</div>
+        <div class="td hour">19.00 - 20.00</div>
+        <div class="td hour">20.00 - 21.00</div>
+        <div class="td hour">21.00 - 22.00</div>
+        <div class="td hour">22.00 - 23.00</div>
+      </div>
+    </div>
+    <div class="datepicker-time hide" data-hours="day-14">
+      <div class="tr hours">
+        <div class="td hour">09.00 - 10.00</div>
+        <div class="td hour">10.00 - 11.00</div>
+        <div class="td hour">11.00 - 12.00</div>
+        <div class="td hour">12.00 - 13.00</div>
+        <div class="td hour">13.00 - 14.00</div>
+        <div class="td hour">14.00 - 15.00</div>
+        <div class="td hour">15.00 - 16.00</div>
+        <div class="td hour">16.00 - 17.00</div>
+        <div class="td hour disabled">17.00 - 18.00</div>
+        <div class="td hour disabled">18.00 - 19.00</div>
+        <div class="td hour disabled">19.00 - 20.00</div>
+        <div class="td hour disabled">20.00 - 21.00</div>
+        <div class="td hour disabled">21.00 - 22.00</div>
+        <div class="td hour disabled">22.00 - 23.00</div>
+      </div>
+    </div>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkq10qGjGPTgmSBxGwogWSRC3fDHIHvrc&amp;callback=initMap"></script>
+    <script src="js/build.js"></script>
+    <script src="js/map.js"></script>
+  </body>
+</html>
