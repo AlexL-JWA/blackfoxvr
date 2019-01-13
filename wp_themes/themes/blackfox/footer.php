@@ -1,82 +1,105 @@
+<?php 
+  $conatct = get_field('contact', "options");
+?>
+
 <footer id="scroll-footer">
-      <div class="top-block">
+    <div class="top-block">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <ul class="contacts">
-                <li class="icon-mail"><a href="mailto:<?php the_field('email'); ?>"><?php the_field('email'); ?></a></li>
-                <li class="icon-mobile"><a href="tel:<?php the_field('phone_footer'); ?>"><?php the_field('phone_footer'); ?></a></li>
-                <li class="icon-marker"><a href=""><?php the_field('address_footer'); ?></a></li>
-              </ul>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <ul class="contacts">
+                        <li class="icon-mail"><a href="mailto:<?php echo $conatct[" email"]; ?>">
+                                <?php echo $conatct["email"]; ?></a></li>
+                        <li class="icon-mobile"><a href="tel:<?php echo $conatct[" tel_link"]; ?>">
+                                <?php echo $conatct["tel_text"]; ?></a></li>
+                        <li class="icon-marker"><a href="<?php echo $conatct[" map_link"];?>" target="_black">
+                                <?php echo $conatct["adress_text"]; ?></a></li>
+                    </ul>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="container">
+    </div>
+    <div class="container">
         <div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <div class="menu-block">
-                <ul class="menu">
-                    <li><a href="#scroll-about-us">О НАС</a></li>
-                    <li><a href="#scroll-our-games">ИГРЫ</a></li>
-                    <li><a href="#scroll-calendar">КАЛЕНДАРЬ</a></li>
-                    <li><a href="#scroll-gallery">ГАЛЕРЕЯ</a></li>
-                    <li><a href="#scroll-footer">КОНТАКТЫ</a></li>
-                </ul>
-                <ul class="soc">
-                    <?php
-                    if( have_rows('social') ):
-                    while ( have_rows('social') ) : the_row(); ?>
-                        <li><a class="icon-<?php the_sub_field('icon_social'); ?>" href="<?php the_sub_field('url_social'); ?>" target="_blank"></a></li>
-                    <?php endwhile;
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="menu-block">
+                    <?php 
+                          wp_nav_menu( array(
+                            'theme_location'  => 'Header',
+                            'menu'            => 'main-menu', 
+                            'container'       => '', 
+                            'container_class' => '', 
+                            'container_id'    => '',
+                            'menu_class'      => 'menu', 
+                            'menu_id'         => '',
+                            'echo'            => true,
+                            'fallback_cb'     => 'wp_page_menu',
+                            'before'          => '',
+                            'after'           => '',
+                            'link_before'     => '',
+                            'link_after'      => '',
+                            'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                            'depth'           => 0,
+                            'walker'          => '',
+                          ) );
+                        ?>
+                    <ul class="soc">
+                        <?php
+                    if( have_rows('social' , 'options') ):
+                    while ( have_rows('social' , 'options') ) : the_row(); ?>
+                        <li><a class="icon-<?php the_sub_field('icon_social' , 'options'); ?>" href="<?php the_sub_field('url_social' , 'options'); ?>"
+                                target="_blank"></a></li>
+                        <?php endwhile;
                     endif; ?>
-                </ul>
+                    </ul>
+                </div>
+                <div id="map"></div>
+                <div class="copiright">
+                    <p>
+                        <?php the_field('copiright', 'options'); ?>
+                    </p>
+                </div>
             </div>
-            <div id="map"></div>
-            <div class="copiright">
-              <p><?php the_field('copiright'); ?></p>
+        </div>
+    </div>
+</footer>
+<div class="modal fade registration" role="dialog">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-head">
+                <h3>Оформление заявки</h3>
             </div>
-          </div>
+            <?php echo do_shortcode('[contact-form-7 id="405" title="Заказать звонок"]'); ?>
         </div>
-      </div>
-    </footer>
-    <div class="modal fade registration" role="dialog">
-      <div class="modal-dialog modal-sm">
-        <div class="modal-content">
-          <div class="modal-head">
-            <h3>Оформление заявки</h3>
-          </div>
-          <?php echo do_shortcode('[contact-form-7 id="405" title="Заказать звонок"]'); ?>
-        </div>
-      </div>
     </div>
-    <div class="modal fade vrb alert" role="dialog">
-      <div class="modal-dialog modal-sm">
+</div>
+<div class="modal fade vrb alert" role="dialog">
+    <div class="modal-dialog modal-sm">
         <div class="modal-content"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="logo">
-          <h3>Спасибо за бронирование!</h3>
-          <p>Наш менеджер свяжется с Вами в близжайшее время</p><a class="button" href="/">Вернуться на главную</a>
+            <h3>Спасибо за бронирование!</h3>
+            <p>Наш менеджер свяжется с Вами в близжайшее время</p><a class="button" href="/">Вернуться на главную</a>
         </div>
-      </div>
     </div>
-    <div class="modal fade alert" role="dialog">
-      <div class="modal-dialog modal-sm">
+</div>
+<div class="modal fade alert" role="dialog">
+    <div class="modal-dialog modal-sm">
         <div class="modal-content"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="logo">
-          <h3>Ваша заявка принята!</h3>
-          <p>Наш менеджер свяжется с Вами в близжайшее время</p><a class="button" href="/">Вернуться на главную</a>
+            <h3>Ваша заявка принята!</h3>
+            <p>Наш менеджер свяжется с Вами в близжайшее время</p><a class="button" href="/">Вернуться на главную</a>
         </div>
-      </div>
     </div>
-    <div class="modal fade modal-reviews" role="dialog">
-      <div class="modal-dialog modal-sm">
+</div>
+<div class="modal fade modal-reviews" role="dialog">
+    <div class="modal-dialog modal-sm">
         <div class="modal-content">
-          <div class="modal-head">
-            <h3>Отзыв</h3>
-          </div>
-          <?php echo do_shortcode('[contact-form-7 id="406" title="Отзывы"]'); ?>
+            <div class="modal-head">
+                <h3>Отзыв</h3>
+            </div>
+            <?php echo do_shortcode('[contact-form-7 id="406" title="Отзывы"]'); ?>
         </div>
-      </div>
     </div>
-	<?php
+</div>
+<?php
 	
 	/* Часы */
 	$hours = array(
@@ -209,7 +232,8 @@
 	}
 	
 	?>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkq10qGjGPTgmSBxGwogWSRC3fDHIHvrc&amp;callback=initMap"></script> 
-    <?php wp_footer(); ?>
-  </body>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkq10qGjGPTgmSBxGwogWSRC3fDHIHvrc&amp;callback=initMap"></script>
+<?php wp_footer(); ?>
+</body>
+
 </html>
